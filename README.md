@@ -4,6 +4,10 @@ It takes the product URL belonging to ETSY and scrapes the product information f
 It saves this information in MYSQL database. 
 Shows the product detail when it is selected. 
 
+Run app/app.py file to use web application.
+Dockerization does not work for now.
+
+
 <h2>Listing the products from database</h2>
 <img src="images/all_products.png" width="90%">
 <h2>Viewing the product's detail</h2>
