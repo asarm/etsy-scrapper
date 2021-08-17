@@ -1,18 +1,20 @@
 '''
-- Adding Product Function: Gets the product link as an input, scraps the data from the website, saves the data to the database, and returns the Product Object (product_id, name, image, price)
-- Product Detail Function: Gets the product_id as input and returns the Product Object (product_id, name, image, price)
-- Listing Products Function: Returns all the products in the database as an array.
+name: Mert Arda Asar
+date: 17.08.2021
+
+functions.py file contains required functions to scraping data from url and converting a list of products to json.
 '''
+
 from bs4 import BeautifulSoup
 import requests
 
-url = "https://www.etsy.com/uk/listing/772695061/brass-or-silver-leaf-bookmark-set"
+
 def fetch_product(url):
     # keeps product information (name, price and img)
     product_data = dict()
 
     r = requests.get(url)
-    source = BeautifulSoup(r.content, "lxml")
+    source = BeautifulSoup(r.content, "html.parser")
 
     # name could be fetch directly from url instead using bs
     product_name = source.find("h1").text.strip()
@@ -28,3 +30,12 @@ def fetch_product(url):
     product_data['product_img'] = product_img
 
     return product_data
+
+# Converts a list which contains a product information to json object
+def list_to_json(product):
+    return {
+            'id': product[0],
+            'name': product[1],
+            'img_url': product[2],
+            'price': product[3]
+            }

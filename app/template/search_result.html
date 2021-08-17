@@ -9,32 +9,22 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>All Products</title>
+    <title>Search</title>
   </head>
-  <body style="overflow-x: hidden">
   {% include 'navbar.html'%}
-    <center><h1>All Products</h1></center>
-    <center>
-      <div class="col-md-6">
-        <form action="/add_product" method="post">
-          <div class="input-group mb-3 mt-2">
-            <input type="text" class="form-control" name="p_url" placeholder="Product URL" aria-label="Product URL" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Add</button>
-          </div>
-        </form>
-      </div>
-    </center>
+  <body style="overflow-x: hidden">
+    <span style="font-weight: bold;">Search Result: </span><span> {{products['search_key']}}</span>
     <center>
       {%if products['total_products'] == 0%}
-        <h5>Please add new products.</h5>
+        <h5>Any products could not found :(</h5>
       {%endif%}
     </center>
     <center>
       <div class="row">
       {%for i in range(0, products['total_products'])%}
-        <div class="col-md-4 mt-3" style="border: 1px solid;">
+        <div class="col-md-6 mt-3" style="margin-left: auto;margin-right: auto">
           <a href="product/{{products['products'][i][0]}}" style="color: black; text-decoration: none">
-            <img src="{{products['products'][i][2]}}" width="250px" height="250px"></img>
+            <img src="{{products['products'][i][2]}}" width="150px" height="150px"></img>
             <h5>{{products['products'][i][1]}}</h5>
             <p>£{{products['products'][i][3]}}</p>
           </a>

@@ -1,13 +1,26 @@
 '''
-- Adding Product Function: Gets the product link as an input, scraps the data from the website, saves the data to the database, and returns the Product Object (product_id, name, image, price)
-- Product Detail Function: Gets the product_id as input and returns the Product Object (product_id, name, image, price)
-- Listing Products Function: Returns all the products in the database as an array.
+name: Mert Arda Asar
+date: 17.08.2021
+
+Product class represents each product from etsy.com
+Product class has name, image and price attributes
 '''
+
 class Product:
+
     name = ""
     image = ""
-    price = ""
+    price = 0
+
     def __init__(self, name, image, price):
         self.name = name
         self.image = image
         self.price = price
+
+    def convert_to_json(self):
+
+       return {
+           'name':self.name,
+           'image':self.image,
+           'price':self.price
+       }

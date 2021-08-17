@@ -1,14 +1,19 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="/">Sociality</a>
+  <a class="navbar-brand" href="/" style="margin-left: 5%">Scrapper.io</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="/">Home</a>
       </li>
     </ul>
+    <form class="form-inline" style="margin-left: auto;margin-right: 5%" method="post" action="/search">
+      <div class="row">
+      <div class="col-md-10"><input class="form-control mr-sm-2" name="title" type="search" placeholder="Search by Title" aria-label="Search"></div>
+      <div class="col-md-2" style="margin-top: auto; margin-bottom: auto"><button class="btn btn-sm btn-warning">Search</button></div>
+      </div>
+    </form>
   </div>
 </nav>
