@@ -11,7 +11,9 @@ Change your db information from config.py. </br>
 Run app/app.py file to use web application.</br>
 Dockerization does not work for now. Mysql connection could not complated.
 
-<h4>Using as an api</h4>
+<h3>Using as an api</h3>
+<li>Adding new product </li>
+http://192.168.1.62:5000/add_product/?url=https://www.etsy.com/uk/listing/531135817/miniature-brass-helicopter-model-kit?ref=related-5
 
 <h2>Listing the Products From Database</h2>
 <img src="images/all_products.png" width="90%">
