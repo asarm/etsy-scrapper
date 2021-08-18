@@ -8,6 +8,9 @@ Shows the product detail when it is selected.
 
 Install requirements from requirements.txt using pip install -r requirements.txt </br> 
 Change your db information from config.py. </br>
+<h4>Encountered error if the config.py does not set</h4>
+<img src="images/db_error.png" width="70%">
+
 Run app/app.py file to use web application.</br>
 Dockerization does not work for now. Mysql connection could not complated.
 
