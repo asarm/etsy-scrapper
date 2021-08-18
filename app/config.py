@@ -6,7 +6,7 @@ config.py file contains the variables to use while trying to connect the databas
 '''
 
 DB_USER = "root"
-DB_PASSWORD = "asdffdsa1"
+DB_PASSWORD = "root"
 DB_HOST = "localhost"
 DB_PORT = "3306"
 DB_DATABASE = "scrapper"
