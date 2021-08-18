@@ -4,13 +4,22 @@ It takes the product URL belonging to ETSY and scrapes the product information f
 It saves this information in MYSQL database. 
 Shows the product detail when it is selected. 
 
-Run app/app.py file to use web application.
-Dockerization does not work for now.
+<h2>USAGE</h2>
 
+Install requirements from requirements.txt using pip install -r requirements.txt </br> 
+Change your db information from config.py. </br>
+Run app/app.py file to use web application.</br>
+Dockerization does not work for now. Mysql connection could not complated.
 
-<h2>Listing the products from database</h2>
+<h3>Using as an api</h3>
+<li>Adding new product </li>
+http://192.168.1.62:5000/add_product/?url=https://www.etsy.com/uk/listing/531135817/miniature-brass-helicopter-model-kit?ref=related-5
+
+<h2>Listing the Products From Database</h2>
 <img src="images/all_products.png" width="90%">
-<h2>Viewing the product's detail</h2>
+<h2>Viewing the Product's Detail</h2>
 <img src="images/product.png" width="90%">
 <h2>Searching Result</h2>
 <img src="images/search.png" width="90%">
+<h2>MYSQL DB Products Table</h2>
+<img src="images/db_table.png" width="90%">
