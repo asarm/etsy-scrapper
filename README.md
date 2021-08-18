@@ -5,9 +5,13 @@ It saves this information in MYSQL database.
 Shows the product detail when it is selected. 
 
 <h2>USAGE</h2>
-Run app/app.py file to use web application.</br>
-Dockerization does not work for now.
 
+Install requirements from requirements.txt using pip install -r requirements.txt </br> 
+Change your db information from config.py. </br>
+Run app/app.py file to use web application.</br>
+Dockerization does not work for now. Mysql connection could not complated.
+
+<h4>Using as an api</h4>
 
 <h2>Listing the Products From Database</h2>
 <img src="images/all_products.png" width="90%">
