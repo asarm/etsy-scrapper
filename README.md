@@ -8,9 +8,11 @@ Run app/app.py file to use web application.
 Dockerization does not work for now.
 
 
-<h2>Listing the products from database</h2>
+<h2>Listing the Products From Database</h2>
 <img src="images/all_products.png" width="90%">
-<h2>Viewing the product's detail</h2>
+<h2>Viewing the Product's Detail</h2>
 <img src="images/product.png" width="90%">
 <h2>Searching Result</h2>
 <img src="images/search.png" width="90%">
+<h2>MYSQL DB Products Table</h2>
+<img src="images/db_table.png" width="90%">
